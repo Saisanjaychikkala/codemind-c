@@ -1,16 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,i;
+    int n,i,c=1;
     scanf("%d",&n);
-    while(n>0)
+    X:for(i=n;i>0;i--)
     {
-    for(i=1;i<=n;i++)
-    {
-        printf("%d",i);
+        
+        printf("%d ",i);
     }
     printf("
 ");
-    n--;
+    c++;
+    if(n>=c)
+    {
+    goto X;
     }
+    return 0;
 }
